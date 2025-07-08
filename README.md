@@ -20,14 +20,6 @@ A solução consiste em:
 3. **Balanceador de carga Nginx** - Distribui requisições entre as instâncias da API
 4. **Cache em memória** - Para cache dos resultados de verificação de saúde
 
-## Funcionalidades
-
-- **Processamento assíncrono de pagamentos** - Pagamentos são processados em goroutines em segundo plano
-- **Monitoramento de verificação de saúde** - Monitora a saúde do processador de pagamentos a cada 6 segundos
-- **Mecanismo de failover** - Faz fallback para o processador de backup quando o padrão falha
-- **Prevenção de duplicatas** - Previne pagamentos duplicados usando ID de correlação
-- **Otimizado para recursos** - Usa recursos mínimos de CPU e memória
-
 ## Endpoints
 
 ### POST /payments
